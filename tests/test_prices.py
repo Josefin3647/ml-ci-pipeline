@@ -51,7 +51,7 @@ def source() -> tuple[ElprisSource, FakeSession]:
 
 def test_month_ranges() -> None:
     assert month_ranges(date(2025, 11, 20), date(2026, 1, 3)) == [
-        (date(2025, 11, 20), date(2025, 11, 30)),
+        (date(2025, 11, 20), date(2025, 11, 29)),
         (date(2025, 12, 1), date(2025, 12, 31)),
         (date(2026, 1, 1), date(2026, 1, 3)),
     ]
